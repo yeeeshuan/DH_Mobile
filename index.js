@@ -1,5 +1,5 @@
 const btn = document.querySelector(".clicked");
-let mono = 1; 
+let clicked = false; 
 
 /*
 btn.addEventListener("click", changeColor);
@@ -11,10 +11,29 @@ function changeColor() {
     btn.style.background = "orange";
   }
 }
+*/
+
+btn.addEventListener("click", myFunction_set);
+
+function myFunction_set() {
+  if (clicked) {
+  btn.innerHTML = 
+  "<p> Wolfgang Weingart (1941-2021) was a Swiss designer, typographer, and teacher that altered the direction of Swiss typography \
+  from utilizing strict and conservative guidelines to a more experimental and playful approach. An inquisitive and explorative student,\
+  <br/>\
+  &emsp; Weingart constantly questioned the paradigms that existed for Swiss Design—rather than believing that typography should be about \
+  readability, Weingart wanted to show that typography is an art. This idea led to a lifetime commitment to his work and teaching,\
+  inspiring students to see typography as art and imagery rather than a tool for readability, and paving the way for the New Wave\
+  and Swiss Punk typography. </p>"
+  } else {
+  btn.innerHTML = 
+    "yo"
+  }
+}
 
 
-btn.addEventListener("click", myFunction_get);
 
+/*
 // Create a function for getting a variable value
 function myFunction_get() {
     // Get the styles (properties and values) for the root
@@ -38,5 +57,4 @@ function changeColor() {
     mono = 1
   }
 }
-
 */
