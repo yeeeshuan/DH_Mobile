@@ -52,9 +52,93 @@ html{
 }
 
 /* CUSTOM CSS HERE*/
+
 nav {
-    background: red; 
+    background: white; 
 }
+
+nav a{
+    display: block; 
+    background:rgba(255,0,0,0.5); 
+    color: black; 
+    text-decoration: none; 
+    padding:1rem; 
+}
+
+nav a:hover{
+    background:blue; 
+    color: white; 
+}
+
+nav ul{
+    display: flex; 
+    flex-wrap: nowrap; 
+}
+
+nav ul li {
+    position: relative;
+  }
+
+nav ul ul {
+    flex-direction: column;
+}
+
+nav ul li ul {
+    display:none; 
+}
+
+nav ul li:hover ul{
+    display: block; 
+    position: absolute;
+    top: 3rem;
+    left: 0;
+}
+
+nav a.hamburger{
+    display: none; 
+}
+
+/*
+nav {
+    background: #fcf;
+  }
+  
+  nav a {
+    display: block;
+    background: fuchsia;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  nav a:hover {
+    background: purple;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul ul {
+    flex-direction: column;
+  }
+  
+  nav ul li ul {
+    display: none;
+  }
+  
+  nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+  }
+*/
 
 h1, h2{
     font-family: "aktiv-grotesk", sans-serif;
@@ -82,6 +166,24 @@ div.clicked{
     display: block; 
 }
 
+span{
+    font-family: 'Inter', sans-serif;
+    font-size: 15rem; 
+    text-align: left;
+    max-width: 60rem;
+    font-variation-settings: 'wght' 500;
+    transition: font-variation-settings 1s;
+}
+
+span::first-letter{
+    font-family: 'serif';
+}
+
+span:hover p{
+    font-variation-settings: 'wght' 800;
+    transition: font-variation-settings 1s;
+}
+
 p.space_1{
     margin-left: 0; 
 }
@@ -96,6 +198,25 @@ p.space_2{
 
 p.space_2:hover{
     margin-left: 5rem; 
+}
+p.space_3{
+    margin-left: 0; 
+}
+
+p.space_3:hover{
+    margin-left: 10rem; 
+}
+
+p.space_4{
+    margin-left: 0; 
+}
+
+p.space_4:hover{
+    margin-left: 15rem; 
+}
+
+p.name{
+    font-size: 15rem; 
 }
 
 div.clicked:hover p{
@@ -122,4 +243,38 @@ div.clicked:hover br {
 main{
     margin: 2%; 
     padding: 2%; 
+}
+
+@media screen and (max-width: 500px){
+    
+    nav ul{
+        display: block; 
+    }
+
+    nav > ul {
+        display: none; 
+    }
+
+    nav ul li:hover ul{
+        position: static; 
+        top: auto; 
+        left: auto; 
+    }
+
+    nav ul ul a{
+        padding-left: 2rem; 
+    }
+
+    img{
+        max-width: 100%; 
+    }
+
+    nav a.hamburger {
+        display: block; 
+        width: 3rem; 
+    }
+
+    nav:hover ul {
+        display: block; 
+    }
 }

@@ -13,7 +13,7 @@ function changeColor() {
 }
 */
 
-btn.addEventListener("click", myFunction_set);
+btn.addEventListener("onmouseenter", myFunction_set);
 
 function myFunction_set() {
   if (clicked) {
