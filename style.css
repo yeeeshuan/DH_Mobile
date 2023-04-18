@@ -59,10 +59,18 @@ nav {
 
 nav a{
     display: block; 
-    background:rgba(255,0,0,0.5); 
+    background:rgba(255,0,0); 
     color: black; 
     text-decoration: none; 
     padding:1rem; 
+}
+
+nav a.hamburger {
+    display: none;
+  }
+
+nav a.on{
+    background: orange; 
 }
 
 nav a:hover{
@@ -70,32 +78,28 @@ nav a:hover{
     color: white; 
 }
 
-nav ul{
+nav ul ul{
     display: flex; 
     flex-wrap: nowrap; 
 }
 
-nav ul li {
+nav ul ul li {
     position: relative;
   }
 
-nav ul ul {
+nav ul ul ul {
     flex-direction: column;
 }
 
-nav ul li ul {
+nav ul ul li ul {
     display:none; 
 }
 
-nav ul li:hover ul{
+nav ul ul li:hover ul{
     display: block; 
     position: absolute;
     top: 3rem;
     left: 0;
-}
-
-nav a.hamburger{
-    display: none; 
 }
 
 /*
@@ -247,21 +251,21 @@ main{
 
 @media screen and (max-width: 500px){
     
-    nav ul{
+    nav ul ul{
         display: block; 
     }
 
-    nav > ul {
+    nav > ul > li > ul {
         display: none; 
     }
 
-    nav ul li:hover ul{
+    nav ul ul li:hover ul {
         position: static; 
         top: auto; 
         left: auto; 
     }
 
-    nav ul ul a{
+    nav ul ul ul a {
         padding-left: 2rem; 
     }
 
@@ -270,11 +274,19 @@ main{
     }
 
     nav a.hamburger {
-        display: block; 
-        width: 3rem; 
-    }
+        display: block;
+        width: 3rem;
+        padding: 1rem 0.5rem;
+      }
+    
+      nav a.hamburger img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    
 
-    nav:hover ul {
+      nav > ul > li:hover > ul {
         display: block; 
     }
 }
