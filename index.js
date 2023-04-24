@@ -1,5 +1,7 @@
 const btn = document.querySelector(".clicked");
+const options = document.querySelector(".options");
 let clicked = false; 
+
 
 /*
 btn.addEventListener("click", changeColor);
@@ -13,10 +15,12 @@ function changeColor() {
 }
 */
 
-btn.addEventListener("onmouseenter", myFunction_set);
+options.addEventListener("click", myFunction_set);
 
 function myFunction_set() {
+  console.log("Clicked"); 
   if (clicked) {
+  console.log("HERE"); 
   btn.innerHTML = 
   "<p> Wolfgang Weingart (1941-2021) was a Swiss designer, typographer, and teacher that altered the direction of Swiss typography \
   from utilizing strict and conservative guidelines to a more experimental and playful approach. An inquisitive and explorative student,\
@@ -27,8 +31,9 @@ function myFunction_set() {
   and Swiss Punk typography. </p>"
   } else {
   btn.innerHTML = 
-    "yo"
+  "<p> Temporary </p>"
   }
+  clicked = !clicked; 
 }
 
 
