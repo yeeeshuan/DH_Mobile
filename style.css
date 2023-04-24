@@ -71,10 +71,6 @@ nav a.hamburger {
     display: none;
   }
 
-nav a.on{
-   
-}
-
 nav a:hover{
     background:black; 
     color: white; 
