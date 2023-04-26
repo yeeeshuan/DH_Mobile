@@ -322,6 +322,13 @@ span.dot:hover{
     color: white; 
 }
 
+p.date{
+    font-style:italic; 
+    font-family:'Times New Roman', Times, serif;
+    color: orangered; 
+    font-size: 14px; 
+}
+
 a{
     font-family: 'Inter', sans-serif;
     text-align: left;
@@ -417,7 +424,9 @@ p.footer{
 }
 
 p.tl{
-    font-size: 1rem; 
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:italic; 
 }
 
 div.clicked:hover p{
@@ -446,23 +455,59 @@ div.tl{
 }
 
 div.sixth{
-    width: 17%;
+    width: 20%;
     border: 1px solid black ; 
-    padding: 2rem; 
+}
 
+div.quarter{
+    width: 30%;
+    border: 1px solid black ; 
 }
 
 div.third{
-    width: 33%;
+    width: 35%;
     border: 1px solid black ; 
-    padding: 2rem; 
+}
 
+div.half{
+    width: 50%;
+    border: 1px solid black ; 
+}
+
+div.two_thirds{
+    width: 70%;
+    border: 1px solid black ; 
+}
+
+div.info{
+    padding: 2rem; 
+    display: flex; 
+    justify-content: space-between;
+}
+
+div.time{
+    padding: 0.15rem; 
+    border: 1px solid black ; 
+    margin: 0; 
+    width: 60px; 
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+div.event{
+    margin-right: 1rem; 
 }
 
 main{
-    padding: 2%; 
+    padding: 4%; 
     margin: 2%;
     background-color: rgb(250, 250, 250); 
+}
+
+iframe{
+    width: 100%; 
+    height: 100%; 
 }
 
 @media screen and (max-width: 500px){
