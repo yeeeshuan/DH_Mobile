@@ -1,16 +1,16 @@
-const btn = document.querySelector(".clicked");
-const options = document.querySelector(".options");
-let clicked = false; 
+const btn=document.querySelector(".clicked");
+const options=document.querySelector(".options");
+let clicked=false; 
 
 
 /*
 btn.addEventListener("click", changeColor);
 function changeColor() {
-    const count = 10; 
+    const count=10; 
   if (btn.style.background === "orange") {
-    btn.style.background = "white";
+    btn.style.background="white";
   } else {
-    btn.style.background = "orange";
+    btn.style.background="orange";
   }
 }
 */
@@ -21,7 +21,7 @@ function myFunction_set() {
   console.log("Clicked"); 
   if (clicked) {
   console.log("HERE"); 
-  btn.innerHTML = 
+  btn.innerHTML=
   "<p> Wolfgang Weingart (1941-2021) was a Swiss designer, typographer, and teacher that altered the direction of Swiss typography \
   from utilizing strict and conservative guidelines to a more experimental and playful approach. An inquisitive and explorative student,\
   <br/>\
@@ -30,10 +30,10 @@ function myFunction_set() {
   inspiring students to see typography as art and imagery rather than a tool for readability, and paving the way for the New Wave\
   and Swiss Punk typography. </p>"
   } else {
-  btn.innerHTML = 
+  btn.innerHTML=
   "<p> Temporary </p>"
   }
-  clicked = !clicked; 
+  clicked=!clicked; 
 }
 
 
@@ -42,7 +42,7 @@ function myFunction_set() {
 // Create a function for getting a variable value
 function myFunction_get() {
     // Get the styles (properties and values) for the root
-    var temp = getComputedStyle(btn);
+    var temp=getComputedStyle(btn);
     // Alert the value of the --blue variable
     alert("The value of --mono is: " + temp.getPropertyValue('--mono'));
     myFunction_set
@@ -54,12 +54,12 @@ function myFunction_set() {
   }
 
 function changeColor() {
-    mono = mono - 0.1; 
+    mono=mono - 0.1; 
     console.log(mono); 
   if (mono > 0 ) {
-    btn.style.mono = mono;
+    btn.style.mono=mono;
   } else {
-    mono = 1
+    mono=1
   }
 }
 */

@@ -10,16 +10,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!--this makes the site work better with microsoft browsers-->
     <title> Wolfgang Weingart Mobile Experience</title>
-    <link rel = "stylesheet" type = "text/css" href = "style.css"> </link>
+    <link rel="stylesheet" type="text/css" href="style.css"> </link>
     <link rel="stylesheet" href="https://use.typekit.net/cki8hoo.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;800&display=swap" rel="stylesheet">
 <title>HOME</title>
+<script type="text/javascript" src="jquery-3.6.4.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".dot1").click(function(){
+      $(".clicked").removeClass("delta2");
+      $(".clicked").removeClass("delta3");
+      $(".clicked").addClass("space_1");
+    })
+    $(".dot2").click(function(){
+      $(".clicked").removeClass("space_1");
+      $(".clicked").removeClass("delta3");
+      $(".clicked").addClass("delta2");
+    })
+    $(".dot3").click(function(){
+      $(".clicked").removeClass("space_1");
+      $(".clicked").removeClass("delta2");
+      $(".clicked").addClass("delta3");
+    })
+});
+</script>
   </head>
   <body>
-    <div class = "change">
+    <div class="change">
           <header>
             <nav>
               <ul>
@@ -31,17 +51,17 @@
               <ul>
                 <li>
                   <div class="name">
-                  <a href="#" class = "on">
+                  <a href="#" class="on">
                     Home
                   </a>
                 </div>
                 </li>
+                <!--
                 <li>
                   <a href="html/gallery.html">
                     Explorations
                   </a>
                   <ul>
-                    <!-- this UL is for secondary navigation -->
                     <li>
                       <a href="html/p.html">
                         paragraph
@@ -54,12 +74,14 @@
                     </li>
                   </ul>
                 </li>
+                -->
                 <li>
                   <a href="html/gallery.html">
                     Gallery
                   </a>
+                  <!--
                   <ul>
-                    <!-- this UL is for secondary navigation -->
+
                     <li>
                       <a href="html/gallery/kunstkredit.html">
                         Uncover AIGA 1
@@ -71,6 +93,7 @@
                       </a>
                     </li>
                   </ul>
+                  -->
                 </li>
                 <li>
                   <a href="html/timeline.html">
@@ -88,29 +111,29 @@
             </nav>
           </header>
         <main>
-        <div class = "home">
-          <div class = "options">
-            <div class = "choose">
-              <span class = "dot">
+        <div class="home">
+          <div class="options">
+            <div class="dot dot1">
+              <p class="dot">
                1
-              </span>
+              </p>
             </div>
-            <div class = "choose">
-              <span class = "dot">
+            <div class="dot dot2">
+              <p class="dot">
                2
-              </span>
+              </p>
             </div> 
-            <div class = "choose">
-              <span class = "dot">
+            <div class="dot dot3">
+              <p class="dot">
                 3
-              </span>
+              </p>
             </div>
            </div>
           <div class="clicked">
-            <p class="space_1"><a class = "name" id = "name"> Wolfgang Weingart </a>(1941-2021) was a Swiss designer, typographer, and teacher that altered the direction of Swiss typography 
+            <p class="space_1"><span id="name"> Wolfgang Weingart </span>(1941-2021) was a Swiss designer, typographer, and teacher that altered the direction of Swiss typography 
             from utilizing strict and conservative guidelines to a more experimental and playful approach. </p>
 
-            <p class = "space_2">An inquisitive and explorative 
+            <p class="space_2">An inquisitive and explorative 
             student, Weingart constantly questioned the paradigms that existed for Swiss Design—rather than believing that typography 
             should be about readability, Weingart wanted to show that typography is an art. This idea led to a lifetime commitment to 
             his work and teaching, inspiring students to see typography as art and imagery rather than a tool for readability, and paving 
@@ -123,9 +146,9 @@
             </p>
         </div>
     </div>
-
         </main>
+        <p class="footer"> Ethan Huang @ 2023</p>
     </div>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>
