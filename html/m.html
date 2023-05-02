@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- the DOCTYPE declattion tells the file reader (in this case a browser) that we're usong HTML. If you see just "HTML" that means it's HTML5-->
+<html lang="en">
+  <head>
+    <!-- the head element includes information about the page-->
+    <meta charset="UTF-8" />
+    <!-- the meta charset tag declares which kinds of characters are supported-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- the meta viewport tag makes this site responsive-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--this makes the site work better with microsoft browsers-->
+    <title> Wolfgang Weingart Mobile Experience</title>
+    <link rel="stylesheet" type="text/css" href="../style.css"> </link>
+    <link rel="stylesheet" href="https://use.typekit.net/cki8hoo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;800&display=swap" rel="stylesheet">
+<title>HOME</title>
+<script type="text/javascript" src="../jquery-3.6.4.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".dot1").click(function(){
+      console.log("HERE"); 
+      $(".type").removeClass("s2");
+      $(".type").removeClass("s3");
+      $(".type").addClass("s1");
+    })
+    $(".dot2").click(function(){
+      $(".type").removeClass("s1");
+      $(".type").removeClass("s3");
+      $(".type").addClass("s2");
+    })
+    $(".dot3").click(function(){
+      $(".type").removeClass("s1");
+      $(".type").removeClass("s2");
+      $(".type").addClass("s3");
+    })
+});
+</script>
+  </head>
+  <nav>
+    <ul>
+    <li>
+    <!-- UL stands for "unordered list" and LI stands for "list item" -->
+    <ul>
+      <li>
+        <div class="name">
+        <a href="../index.html" class="on">
+          Home
+        </a>
+      </div>
+      </li>
+      <li>
+        <a href="m.html">
+          Typography
+        </a>
+      </li>
+      <!--
+      <li>
+        <a href="html/gallery.html">
+          Explorations
+        </a>
+        <ul>
+          <li>
+            <a href="html/p.html">
+              paragraph
+            </a>
+          </li>
+          <li>
+            <a href="html/name.html">
+              name
+            </a>
+          </li>
+        </ul>
+      </li>
+      -->
+      <li>
+        <a href="gallery.html">
+          Gallery
+        </a>
+        <!--
+        <ul>
+
+          <li>
+            <a href="html/gallery/kunstkredit.html">
+              Uncover AIGA 1
+            </a>
+          </li>
+          <li>
+            <a href="html/gallery/kunstkredit.html">
+              Uncover AIGA 2
+            </a>
+          </li>
+        </ul>
+        -->
+      </li>
+      <li>
+        <a href="timeline.html">
+          Timeline
+        </a>
+      </li>
+      <li>
+        <a href="video.html">
+          Video
+        </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+  </nav>
+  <body class = "typography">
+        <main class = "typography">
+          <div class="options">
+            <div class="dot dot1">
+              <p class="dot">
+               1
+              </p>
+            </div>
+            <div class="dot dot2">
+              <p class="dot">
+               2
+              </p>
+            </div> 
+            <div class="dot dot3">
+              <p class="dot">
+                3
+              </p>
+            </div>
+           </div>
+           <div class="type">
+              <p class="s1">Throughout his teaching, it can be seen that Weingart's dislike for the strict 
+              and constraining rules that his professors laid on him shaped his design philosophies.
+              While instructing typography classes at Basel, he noticed that many students saw the 
+              Swiss grid system as a "safety net' that ensured correct placement of the type. 
+              Weingart disagreed with this idea; he thought that designers should have an "intuitive 
+              relationship with the typography" that informs their use of grids and placement of 
+              content. Weingart believed that a mastery of traditional skills was critical to
+              understanding how to innovate and experiment with typography. As a result, this led to 
+              many assignments that worked with the distortion of type, using shapes and cropping 
+              to better understand the form of the typography. </p>
+          </div>
+        </main>
+        <p class="footer"> Ethan Huang @ 2023</p>
+  </body>
+</html>
